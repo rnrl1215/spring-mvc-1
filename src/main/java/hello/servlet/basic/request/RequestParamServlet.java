@@ -36,7 +36,10 @@ public class RequestParamServlet extends HttpServlet {
 
         System.out.println("조회 single parameter - end");
 
-
-
+        System.out.println("복수 조회 - start");
+        String []usernames =  request.getParameterValues("username");
+        for (String name : usernames) {
+            System.out.println("user name" + name);
+        }
     }
 }
