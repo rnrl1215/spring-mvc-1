@@ -39,7 +39,9 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println("복수 조회 - start");
         String []usernames =  request.getParameterValues("username");
         for (String name : usernames) {
-            System.out.println("user name" + name);
+            System.out.println("user name " + name);
         }
+
+        response.getWriter().write("OK");
     }
 }
