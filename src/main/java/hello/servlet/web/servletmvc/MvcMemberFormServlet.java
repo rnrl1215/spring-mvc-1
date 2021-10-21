@@ -13,7 +13,7 @@ public class MvcMemberFormServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String viewPath = "/WEB-INF/views/name-form.jsp";
+        String viewPath = "/WEB-INF/views/new-form.jsp";
         
         // 컨트롤러에서 뷰로 이동하기 위해 사용
         RequestDispatcher dispatcher = req.getRequestDispatcher(viewPath);
