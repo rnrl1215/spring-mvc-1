@@ -6,6 +6,10 @@ import java.util.Map;
 public class ModelView {
     private String viewName;
 
+    public ModelView(String viewName) {
+        this.viewName = viewName;
+    }
+
     // jsp 에서 쓸수 있도록 데이터를 담아 둔다.
     private Map<String, Object> model = new HashMap<>();
 
